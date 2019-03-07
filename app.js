@@ -18,7 +18,7 @@ app.post('/', function(req, res) {
         awsConfig["region"] = req.headers.aws_region;
 
     AWS.config.update(awsConfig);
-    let key = req.headers.aws_key || "file.json";
+    let key = req.headers.aws_filename || "file.json";
     //console.log("key:",key)
     let objectParams = { Bucket: req.headers.aws_bucketname, Key: key, Body: JSON.stringify(req.body) };
     let uploadPromise = new AWS.S3({ apiVersion: '2006-03-01' }).putObject(objectParams).promise();
