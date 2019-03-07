@@ -1,0 +1,17 @@
+node_modules
+.idea
+._.DS_Store
+.DS_Store
+*.log
+*.ipc
+*.pid
+dump.rdb
+reports/
+package-lock.json
+api-server/**/package-lock.json
+socket-server/package-lock.json
+built-mongo-sdk/package/package-lock.json
+/api-server/plugins/*
+api-server/plugins/
+framework/custom-packages/built-mongo-sdk-1.0.0.tar.gz
+.vscode
